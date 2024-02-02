@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>a2zGroupBD</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.1/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .roboto{
+            font-family: 'Roboto', sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="container mx-auto flex justify-between items-center z-20">
+            <div class="logo p-4">
+                <h2 class="text-5xl font-bold">a2zGroupBD</h2>
+            </div>
+            <div class="lg:block">
+                <ul class="flex text-xl">
+                    <li class="p-4 hover:text-red-600 font-semibold"><a href="#">Home</a></li>
+                    <li class="p-4 hover:text-red-600 font-semibold"><a href="#">About <span class="pl-2 text-sm"><i
+                                    class="fa-solid fa-plus"></i></span></a></li>
+                    <li class="p-4 hover:text-red-600 font-semibold"><a href="#">Portfolio</a></li>
+                    <li class="p-4 hover:text-red-600 font-semibold"><a href="#">Pages <span class="pl-2 text-sm"><i
+                                    class="fa-solid fa-plus"></i></span></a></li>
+                    <li class="p-4 hover:text-red-600 font-semibold"><a href="#">Blog <span class="pl-2 text-sm"><i
+                                    class="fa-solid fa-plus"></i></span></a></li>
+                    <li class="p-4 hover:text-red-600 font-semibold"><a href="#">Contact <span class="pl-2 text-sm"><i
+                                    class="fa-solid fa-plus"></i></span></a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="carousel w-full z-0">
+            <!-- <nav class="container mx-auto flex justify-between items-center z-10">
+                <div class="logo p-4">
+                    <h2 class="text-5xl font-bold">a2zGroupBD</h2>
+                </div>
+                <div class="lg:block">
+                    <ul class="flex text-xl">
+                        <li class="p-4 hover:text-red-600 font-semibold"><a href="#">Home</a></li>
+                        <li class="p-4 hover:text-red-600 font-semibold"><a href="#">About <span class="pl-2 text-sm"><i class="fa-solid fa-plus"></i></span></a></li>
+                        <li class="p-4 hover:text-red-600 font-semibold"><a href="#">Portfolio</a></li>
+                        <li class="p-4 hover:text-red-600 font-semibold"><a href="#">Pages <span class="pl-2 text-sm"><i class="fa-solid fa-plus"></i></span></a></li>
+                        <li class="p-4 hover:text-red-600 font-semibold"><a href="#">Blog <span class="pl-2 text-sm"><i class="fa-solid fa-plus"></i></span></a></li>
+                        <li class="p-4 hover:text-red-600 font-semibold"><a href="#">Contact <span class="pl-2 text-sm"><i class="fa-solid fa-plus"></i></span></a></li>
+                    </ul>
+                </div>
+            </nav> -->
+            <div id="slide1" class="carousel-item relative w-full z-1">
+                <img src="./img/slider1-1.jpg" class="w-full h-[800px]" />
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+
+                    <a href="#slide4" class="btn btn-circle">❮</a>
+                    <div class="max-w-3xl mx-auto">
+                        <h2 class="text-white text-center text-2xl mb-4">Creative Mind , Creative Works</h2>
+                        <h1 class="text-7xl font-bold text-white text-center uppercase">Digital Agency</h1>
+                        <span></span>
+                        <h2 class="text-center text-4xl font-bold text-white">doing creative work.</h2>
+                        <button class="btn btn-outline btn-bg-orange ml-44 mt-5 text-white w-44 uppercase">Discover us</button>
+                    </div>
+                    <a href="#slide2" class="btn btn-circle">❯</a>
+                </div>
+            </div>
+            <div id="slide2" class="carousel-item relative w-full">
+                <img src="./img/slider1-1.jpg" class="w-full h-[800px]" />
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+
+                    <a href="#slide4" class="btn btn-circle">❮</a>
+                    <div class="max-w-3xl mx-auto">
+                        <h2 class="text-white text-center text-2xl mb-4">Creative Mind , Creative Works</h2>
+                        <h1 class="text-7xl font-bold text-white text-center uppercase">Digital Agency</h1>
+                        <span></span>
+                        <h2 class="text-center text-4xl font-bold text-white">doing creative work.</h2>
+                        <button class="btn btn-outline btn-bg-orange ml-44 mt-5 text-white w-44 uppercase">Discover us</button>
+                    </div>
+                    <a href="#slide2" class="btn btn-circle">❯</a>
+                </div>
+            <!-- <div id="slide3" class="carousel-item relative w-full">
+                <img src="https://daisyui.com/images/stock/photo-1414694762283-acccc27bca85.jpg" class="w-full" />
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide2" class="btn btn-circle">❮</a>
+                    <a href="#slide4" class="btn btn-circle">❯</a>
+                </div>
+            </div>
+            <div id="slide4" class="carousel-item relative w-full">
+                <img src="https://daisyui.com/images/stock/photo-1665553365602-b2fb8e5d1707.jpg" class="w-full" />
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide3" class="btn btn-circle">❮</a>
+                    <a href="#slide1" class="btn btn-circle">❯</a>
+                </div>
+            </div> -->
+        </div>
+    </header>
+
+    <main>
+        <section class="w-full">
+            <div class="bg-cover bg-no-repeat bg-center w-full h-[685px]" style="background-image: url(./img/services-bg.jpg);">
+                <div class="container mx-auto flex justify-evenly items-center">
+                    <div class="w-[580px] relative">
+                        <h2 class="text-9xl absolute font-bold opacity-20">01</h2>
+                        <h2 class="text-2xl font-semibold text-red-600 roboto">Welcome</h2>
+                        <h3 class="w-16 h-0.5 bg-red-700 absolute top-4 left-28"></h3>
+                        <h2 class="text-4xl font-semibold text-black-800 roboto pt-5 leading-relaxed">We are digital creative agency in London</h2>
+                        <p class="text-base roboto pt-5 leading-normal">Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation on the runway heading towards a streamlined cloud solution going forward porttitor dictum sapien.</p>
+                        <h2 class="text-xl pt-10">Md Abdul Jalil</h2>
+                        <h2 class="text-xl pt-5"><span>FOUNDER OF CRETIC</span></h2>
+                    </div>
+                    <div>
+                        <img class="h-[685px]" src="./img/about-bg-2-768x797.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Client Section Start Here-->
+        <section class="w-full h-[250px]" style="background-image: url(./img/counter-1.jpg);">
+            <div class="flex container justify-evenly items-center mx-auto h-[250px]">
+                <div class="relative">
+                    <h2 class="text-4xl text-white mb-5 font-bold">25yrs</h2>
+                    <h2 class="text-xl mt-10 text-white">Experience</h2>
+                    <h2 class="w-16 h-2 bg-red-700 absolute top-12 left-0"></h2>
+                </div>
+                <div class="relative">
+                    <h2 class="text-4xl text-white mb-5 font-bold">50k</h2>
+                    <h2 class="text-xl mt-10 text-white">Products</h2>
+                    <h2 class="w-16 h-2 bg-red-700 absolute top-12 left-0"></h2>
+                </div>
+                <div class="relative">
+                    <h2 class="text-4xl text-white mb-5 font-bold">20k</h2>
+                    <h2 class="text-xl mt-10 text-white">Client</h2>
+                    <h2 class="w-16 h-2 bg-red-700 absolute top-12 left-0"></h2>
+                </div>
+                <div class="relative">
+                    <h2 class="text-4xl text-white mb-5 font-bold">50+</h2>
+                    <h2 class="text-xl mt-10 text-white">Awards</h2>
+                    <h2 class="w-16 h-2 bg-red-700 absolute top-12 left-0"></h2>
+                </div>
+            </div>
+        </section>
+        <!-- Client Section End Here-->
+
+        <!--Service Section Start Here-->
+        <section class="container mx-auto">
+            <div class="flex justify-evenly items-center">
+                <div>
+                    <img class="h-[685px]" src="./img/services-bg-1.jpg" alt="">
+                </div>
+
+                <div class="w-[580px] relative">
+                    <h2 class="text-9xl absolute font-bold opacity-20">02</h2>
+                    <h2 class="text-2xl font-semibold text-red-600 roboto">Service</h2>
+                    <h3 class="w-16 h-0.5 bg-red-700 absolute top-4 left-28"></h3>
+                    <h2 class="text-4xl font-semibold text-black-800 roboto pt-5 leading-relaxed">We are doing web related design & services</h2>
+                    <p class="text-base roboto pt-5 leading-normal">Bring to the table win-win survival strategies to ensure proactive domination stream lined cloud solution going forward porttitor dictum sapien.</p>
+                    <div class="grid grid-cols-2">
+                        <div>
+                            <h2>1</h2>
+                        </div>
+                        <div>
+                            <h2>2</h2>
+                        </div>
+                        <div>
+                            <h2>3</h2>
+                        </div>
+                        <div>
+                            <h2>4</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Service Section Ends Here-->
+    </main>
+
+
+
+
+
+
+
+
+</body>
+
+</html>
